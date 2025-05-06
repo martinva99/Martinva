@@ -8,8 +8,8 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.println("Hello and welcome TO TENNIS GAME!"+"\n");
 
-        TennisGame partido1 = new TennisGameV2("Martín", "Martín2");
-        partido1.ganarPunto("Martín2");
+        TennisGame partido1 = new TennisGameV2("Jugador 1", "Jugador 2");
+        partido1.ganarPunto("Jugador 2");
 
         System.out.println(partido1.getScore(""));
 
