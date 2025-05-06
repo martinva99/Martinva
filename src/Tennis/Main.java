@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Hello and welcome TO TENNIS GAME!"+"\n");
 
         TennisGame partido1 = new TennisGameV2("Jugador 1", "Jugador 2");
-        partido1.ganarPunto("Jugador 2");
+        partido1.ganarPunto("Jugador 1");
 
         System.out.println(partido1.getScore(""));
 
