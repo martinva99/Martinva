@@ -6,12 +6,12 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome TO TENNIS GAME!"+"\n");
+        System.out.println("Hello and welcome TO TENNIS GAME!"+"\n");
 
-        TennisGame partido1 = new TennisGameV1("antonio", "jose");
+        TennisGame partido1 = new TennisGameV2("antonio", "jose");
         partido1.ganarPunto("antonio");
 
-        System.out.println(partido1.getScore());
+        System.out.println(partido1.getScore(""));
 
     }
 }

@@ -1,5 +1,5 @@
-package Tennis;
-
+import Tennis.TennisGame;
+import Tennis.TennisGameV2;
 import org.junit.jupiter.params.ParameterizedTest;
 
 import java.util.stream.Stream;
@@ -60,13 +60,13 @@ public class TennisTest {
             if (i < player2Points)
                 game.ganarPunto("player2");
         }
-        assertEquals(expectedScore, game.getScore());
+        assertEquals(expectedScore, game.getScore(""));
     }
 
     @ParameterizedTest
     @MethodSource("getAllScores")
     public void checkAllScoresTennisGame1(int player1Points, int player2Points, String expectedScore) {
-        TennisGame game = new TennisGameV1("player1", "player2");
+        TennisGame game = new TennisGameV2("player1", "player2");
         checkAllScores(player1Points, player2Points, expectedScore, game);
     }
 

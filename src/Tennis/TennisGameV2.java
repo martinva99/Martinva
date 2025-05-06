@@ -1,15 +1,15 @@
 package Tennis;
 
-public class TennisGameV1 implements TennisGame {
+public class TennisGameV2 implements TennisGame {
 
     private int marcadorJ1 = 0;
     private int marcadorJ2 = 0;
-    private String player1Name;
-    private String player2Name;
+    private String nombreJugador1;
+    private String nombreJugador2;
 
-    public TennisGameV1(String player1Name, String player2Name) {
-        this.player1Name = player1Name;
-        this.player2Name = player2Name;
+    public TennisGameV2(String player1Name, String player2Name) {
+        this.nombreJugador1 = player1Name;
+        this.nombreJugador2 = player2Name;
     }
 
     public void ganarPunto(String playerName) {
@@ -19,8 +19,7 @@ public class TennisGameV1 implements TennisGame {
             marcadorJ2 += 1;
     }
 
-    public String getScore() {
-        String score = "";
+    public String getScore(String score) {
         int tempScore=0;
         if (marcadorJ1 == marcadorJ2)
         {
