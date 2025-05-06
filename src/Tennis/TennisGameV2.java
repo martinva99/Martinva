@@ -26,16 +26,16 @@ public class TennisGameV2 implements TennisGame {
             switch (marcadorJ1)
             {
                 case 0:
-                    score = "Love-All";
+                    score = "Empate a cero";
                     break;
                 case 1:
-                    score = "Fifteen-All";
+                    score = "Empate a 15";
                     break;
                 case 2:
-                    score = "Thirty-All";
+                    score = "Empate a 30";
                     break;
                 default:
-                    score = "Deuce";
+                    score = "Empate a 40";
                     break;
 
             }
@@ -43,10 +43,10 @@ public class TennisGameV2 implements TennisGame {
         else if (marcadorJ1 >=4 || marcadorJ2 >=4)
         {
             int minusResult = marcadorJ1 - marcadorJ2;
-            if (minusResult==1) score ="Advantage player1";
-            else if (minusResult ==-1) score ="Advantage player2";
-            else if (minusResult>=2) score = "Win for player1";
-            else score ="Win for player2";
+            if (minusResult==1) score ="Ventaja jugador 1";
+            else if (minusResult ==-1) score ="Ventaja jugador 2";
+            else if (minusResult>=2) score = "Gana jugador 1";
+            else score ="Gana jugador 2";
         }
         else
         {
@@ -57,16 +57,16 @@ public class TennisGameV2 implements TennisGame {
                 switch(tempScore)
                 {
                     case 0:
-                        score+="Love";
+                        score+="Cero";
                         break;
                     case 1:
-                        score+="Fifteen";
+                        score+="15";
                         break;
                     case 2:
-                        score+="Thirty";
+                        score+="30";
                         break;
                     case 3:
-                        score+="Forty";
+                        score+="40";
                         break;
                 }
             }
