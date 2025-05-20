@@ -12,7 +12,6 @@ public class Main {
         partido1.ganarPunto("Martín2");
 
         System.out.println(partido1.getScore(""));
-        iiyfiyf
 
     }
 }
